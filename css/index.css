@@ -211,11 +211,6 @@ footer {
   display: flex;
   padding: 3vh;
 }
-@media (max-width: 500px) {
-  .about {
-    flex-direction: column;
-  }
-}
 .about div {
   width: 40%;
 }
