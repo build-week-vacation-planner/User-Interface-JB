@@ -1,24 +1,29 @@
 * {
 	box-sizing: border-box;
+	font-family: "Roboto", sans-serif;
 }
 
 html {
 	font-size: 62.5%;
 	margin: 0 auto;
-	max-width: 80vw;
+	max-width: 70vw;
 	width: 100%;
+	@media @mobile {
+		max-width: 90vw;
+	}
 }
 
 .container {
 	background: @bgcolor;
+	padding-bottom: 5vh;
 }
 
 h1 {
-	font-size: 3.4rem;
+	font-size: 5rem;
 }
 
 h2 {
-	font-size: 3.2rem;
+	font-size: 4rem;
 }
 
 h3 {
@@ -30,9 +35,12 @@ a {
 }
 
 p {
-	font-size: 1.4rem;
+	font-size: 2.5rem;
 }
 
 img {
 	width: 100%;
+}
+label {
+	font-size: 2rem;
 }

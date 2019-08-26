@@ -124,21 +124,28 @@ table {
 }
 * {
   box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }
 html {
   font-size: 62.5%;
   margin: 0 auto;
-  max-width: 80vw;
+  max-width: 70vw;
   width: 100%;
+}
+@media (max-width: 500px) {
+  html {
+    max-width: 90vw;
+  }
 }
 .container {
   background: #29a1c6;
+  padding-bottom: 5vh;
 }
 h1 {
-  font-size: 3.4rem;
+  font-size: 5rem;
 }
 h2 {
-  font-size: 3.2rem;
+  font-size: 4rem;
 }
 h3 {
   font-size: 2.8rem;
@@ -147,34 +154,116 @@ a {
   font-size: 1.8rem;
 }
 p {
-  font-size: 1.4rem;
+  font-size: 2.5rem;
 }
 img {
   width: 100%;
+}
+label {
+  font-size: 2rem;
 }
 nav {
   display: flex;
   position: fixed;
   background: white;
-  max-width: 80vw;
+  max-width: 70vw;
   width: 100%;
+  padding: 0.5vw 0;
+}
+@media (max-width: 500px) {
+  nav {
+    flex-direction: column;
+    justify-content: center;
+    max-width: 90vw;
+    position: static;
+    padding-bottom: 1vh;
+  }
 }
 nav .title {
   width: 50%;
+}
+@media (max-width: 500px) {
+  nav .title {
+    width: 100%;
+    text-align: center;
+  }
 }
 nav .navBar {
   display: flex;
   justify-content: flex-end;
   width: 50%;
 }
+@media (max-width: 500px) {
+  nav .navBar {
+    justify-content: space-around;
+    width: 100%;
+  }
+}
 nav .navBar a {
   text-decoration: none;
   margin: 2vh 2vh 0;
 }
+footer {
+  text-align: center;
+  padding: 3.5vh;
+}
 .about {
   display: flex;
+  padding: 3vh;
+}
+@media (max-width: 500px) {
+  .about {
+    flex-direction: column;
+  }
+}
+.about div {
+  width: 40%;
+}
+.about div p {
+  padding: 2vh 0;
+}
+.about img {
+  width: 60%;
+  padding: 0 2vh;
 }
 .planning {
   display: flex;
   flex-direction: row-reverse;
+  padding: 3vh;
+}
+.planning div {
+  width: 40%;
+}
+.planning div p {
+  padding: 2vh 0;
+}
+.planning img {
+  width: 60%;
+  padding: 0 2vh;
+}
+.contact {
+  margin: 0 30vh;
+}
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  font-size: 1.5rem;
+  resize: vertical;
+}
+input[type="submit"] {
+  background-color: #4caf50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+input[type="submit"]:hover {
+  background-color: #45a049;
 }

@@ -2,15 +2,31 @@ nav {
 	display: flex;
 	position: fixed;
 	background: white;
-	max-width: 80vw;
+	max-width: 70vw;
 	width: 100%;
+	padding: 0.5vw 0;
+	@media @mobile {
+		flex-direction: column;
+		justify-content: center;
+		max-width: 90vw;
+		position: static;
+		padding-bottom: 1vh;
+	}
 	.title {
 		width: 50%;
+		@media @mobile {
+			width: 100%;
+			text-align: center;
+		}
 	}
 	.navBar {
 		display: flex;
 		justify-content: flex-end;
 		width: 50%;
+		@media @mobile {
+			justify-content: space-around;
+			width: 100%;
+		}
 		a {
 			text-decoration: none;
 			margin: 2vh 2vh 0;
