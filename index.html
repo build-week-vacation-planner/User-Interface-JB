@@ -10,7 +10,6 @@
 		/>
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link href="css/index.css" rel="stylesheet" />
-		<script src="java.js"></script>
 	</head>
 
 	<body>
@@ -18,15 +17,15 @@
 			<h1 class="title">Vacation Planner</h1>
 			<div class="navBar">
 				<a href="#">Home</a>
-				<a href="#">About</a>
-				<a href="#">Contact Us</a>
+				<a href="#about">About</a>
+				<a href="#contact">Contact Us</a>
 				<a href="#">Login</a>
 			</div>
 		</nav>
 
 		<div class="container">
 			<img src="img/equip.jpg" alt="Picture of planning a" />
-			<section class="about">
+			<section id="about" class="about">
 				<div>
 					<h2>About</h2>
 					<p>
@@ -56,7 +55,7 @@
 				</div>
 				<img src="img/list.jpg" alt="Picture of a list" />
 			</section>
-			<div class="contact">
+			<div id="contact" class="contact">
 				<form action="/action_page.php">
 					<label for="name">First and Last Name</label>
 					<input

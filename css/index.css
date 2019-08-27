@@ -153,6 +153,9 @@ h3 {
 a {
   font-size: 1.8rem;
 }
+a:visited {
+  color: black;
+}
 p {
   font-size: 2.5rem;
 }
@@ -181,10 +184,12 @@ nav {
 }
 nav .title {
   width: 50%;
+  margin-left: 1vw;
 }
 @media (max-width: 500px) {
   nav .title {
     width: 100%;
+    margin-left: 0;
     text-align: center;
   }
 }
