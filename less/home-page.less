@@ -1,9 +1,14 @@
 .about {
 	display: flex;
 	padding: 3vh;
-
+	@media @mobile {
+		flex-direction: column;
+	}
 	div {
 		width: 40%;
+		@media @mobile {
+			width: 100%;
+		}
 		p {
 			padding: 2vh 0;
 		}
@@ -11,14 +16,24 @@
 	img {
 		width: 60%;
 		padding: 0 2vh;
+		@media @mobile {
+			width: 100%;
+			padding: 0;
+		}
 	}
 }
 .planning {
 	display: flex;
 	flex-direction: row-reverse;
 	padding: 3vh;
+	@media @mobile {
+		flex-direction: column;
+	}
 	div {
 		width: 40%;
+		@media @mobile {
+			width: 100%;
+		}
 		p {
 			padding: 2vh 0;
 		}
@@ -26,10 +41,17 @@
 	img {
 		width: 60%;
 		padding: 0 2vh;
+		@media @mobile {
+			padding: 0;
+			width: 100%;
+		}
 	}
 }
 .contact {
 	margin: 0 30vh;
+	@media @mobile {
+		margin: 0 4vh;
+	}
 }
 input[type="text"],
 select,
@@ -45,7 +67,7 @@ textarea {
 }
 
 input[type="submit"] {
-	background-color: #4caf50;
+	background-color: #f26863;
 	color: white;
 	padding: 12px 20px;
 	border: none;
@@ -54,5 +76,5 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-	background-color: #45a049;
+	background-color: #f0d151;
 }

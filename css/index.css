@@ -134,7 +134,7 @@ html {
 }
 @media (max-width: 500px) {
   html {
-    max-width: 90vw;
+    max-width: 100vw;
   }
 }
 .container {
@@ -165,7 +165,7 @@ label {
 nav {
   display: flex;
   position: fixed;
-  background: white;
+  background: #f26863;
   max-width: 70vw;
   width: 100%;
   padding: 0.5vw 0;
@@ -174,7 +174,7 @@ nav {
   nav {
     flex-direction: column;
     justify-content: center;
-    max-width: 90vw;
+    max-width: 100vw;
     position: static;
     padding-bottom: 1vh;
   }
@@ -211,8 +211,18 @@ footer {
   display: flex;
   padding: 3vh;
 }
+@media (max-width: 500px) {
+  .about {
+    flex-direction: column;
+  }
+}
 .about div {
   width: 40%;
+}
+@media (max-width: 500px) {
+  .about div {
+    width: 100%;
+  }
 }
 .about div p {
   padding: 2vh 0;
@@ -221,13 +231,29 @@ footer {
   width: 60%;
   padding: 0 2vh;
 }
+@media (max-width: 500px) {
+  .about img {
+    width: 100%;
+    padding: 0;
+  }
+}
 .planning {
   display: flex;
   flex-direction: row-reverse;
   padding: 3vh;
 }
+@media (max-width: 500px) {
+  .planning {
+    flex-direction: column;
+  }
+}
 .planning div {
   width: 40%;
+}
+@media (max-width: 500px) {
+  .planning div {
+    width: 100%;
+  }
 }
 .planning div p {
   padding: 2vh 0;
@@ -236,8 +262,19 @@ footer {
   width: 60%;
   padding: 0 2vh;
 }
+@media (max-width: 500px) {
+  .planning img {
+    padding: 0;
+    width: 100%;
+  }
+}
 .contact {
   margin: 0 30vh;
+}
+@media (max-width: 500px) {
+  .contact {
+    margin: 0 4vh;
+  }
 }
 input[type="text"],
 select,
@@ -252,7 +289,7 @@ textarea {
   resize: vertical;
 }
 input[type="submit"] {
-  background-color: #4caf50;
+  background-color: #f26863;
   color: white;
   padding: 12px 20px;
   border: none;
@@ -260,5 +297,5 @@ input[type="submit"] {
   cursor: pointer;
 }
 input[type="submit"]:hover {
-  background-color: #45a049;
+  background-color: #f0d151;
 }
