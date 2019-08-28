@@ -152,6 +152,8 @@ h2 {
 }
 h3 {
   font-size: 2.8rem;
+  padding: 2vh;
+  text-decoration: underline;
 }
 a {
   font-size: 1.8rem;
@@ -321,8 +323,32 @@ input[type="submit"]:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 3vh;
+}
+.WWA h2 {
+  padding: 4vh 0 2vh;
+}
+.PLparent {
+  display: flex;
+  justify-content: center;
 }
 .PL {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3vh;
+  max-width: 34%;
+}
+@media (max-width: 500px) {
+  .PL {
+    max-width: 100%;
+  }
+}
+.PL h2 {
+  padding: 2vh;
+  border-top: 5px solid #f26863;
+}
+.PL div {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -331,16 +357,74 @@ input[type="submit"]:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 3vh;
+}
+.UI h2 {
+  padding: 2vh;
+  border-top: 5px solid #f26863;
 }
 .UI div {
   display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+@media (max-width: 500px) {
+  .UI div {
+    flex-direction: column;
+  }
 }
 .UI div div {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 .FE {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 3vh;
+}
+.FE h2 {
+  padding: 2vh;
+  border-top: 5px solid #f26863;
+}
+.FE div {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+@media (max-width: 500px) {
+  .FE div {
+    flex-direction: column;
+  }
+}
+.FE div div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.profile2 {
+  max-width: 30%;
+}
+@media (max-width: 500px) {
+  .profile2 {
+    max-width: 100%;
+  }
+}
+.profile3 {
+  max-width: 30%;
+}
+@media (max-width: 500px) {
+  .profile3 {
+    max-width: 100%;
+  }
+}
+.profile4 {
+  max-width: 30%;
+  margin-top: 2vh;
+}
+@media (max-width: 500px) {
+  .profile4 {
+    max-width: 100%;
+  }
 }

@@ -2,21 +2,52 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	padding: 3vh;
+	h2 {
+		padding: 4vh 0 2vh;
+	}
+}
+.PLparent {
+	display: flex;
+	justify-content: center;
 }
 .PL {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	padding: 3vh;
+	max-width: 34%;
+	@media @mobile {
+		max-width: 100%;
+	}
+	h2 {
+		.border();
+	}
+	div {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
 }
 .UI {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	padding: 3vh;
+	h2 {
+		.border();
+	}
 	div {
 		display: flex;
+		justify-content: space-evenly;
+		align-items: flex-start;
+		@media @mobile {
+			flex-direction: column;
+		}
 		div {
 			display: flex;
 			flex-direction: column;
+			align-items: center;
 		}
 	}
 }
@@ -24,4 +55,41 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	padding: 3vh;
+	h2 {
+		.border();
+	}
+	div {
+		display: flex;
+		justify-content: space-evenly;
+		align-items: flex-start;
+		@media @mobile {
+			flex-direction: column;
+		}
+		div {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+	}
+}
+
+.profile2 {
+	max-width: 30%;
+	@media @mobile {
+		max-width: 100%;
+	}
+}
+.profile3 {
+	max-width: 30%;
+	@media @mobile {
+		max-width: 100%;
+	}
+}
+.profile4 {
+	max-width: 30%;
+	margin-top: 2vh;
+	@media @mobile {
+		max-width: 100%;
+	}
 }
