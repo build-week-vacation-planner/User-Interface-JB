@@ -141,6 +141,9 @@ html {
   background: #29a1c6;
   padding-bottom: 5vh;
 }
+.container2 {
+  background: #29a1c6;
+}
 h1 {
   font-size: 5rem;
 }
@@ -164,6 +167,14 @@ img {
 }
 label {
   font-size: 2rem;
+}
+.homeIMG {
+  margin-top: 6vh;
+}
+@media (max-width: 500px) {
+  .homeIMG {
+    margin-top: 0;
+  }
 }
 nav {
   display: flex;
@@ -195,12 +206,11 @@ nav .title {
 }
 nav .navBar {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-around;
   width: 50%;
 }
 @media (max-width: 500px) {
   nav .navBar {
-    justify-content: space-around;
     width: 100%;
   }
 }
@@ -211,9 +221,11 @@ nav .navBar a {
 footer {
   text-align: center;
   padding: 3.5vh;
+  background: #f26863;
 }
 .about {
   display: flex;
+  align-items: center;
   padding: 3vh;
 }
 @media (max-width: 500px) {
@@ -234,7 +246,7 @@ footer {
 }
 .about img {
   width: 60%;
-  padding: 0 2vh;
+  padding-left: 2vh;
 }
 @media (max-width: 500px) {
   .about img {
@@ -245,6 +257,7 @@ footer {
 .planning {
   display: flex;
   flex-direction: row-reverse;
+  align-items: center;
   padding: 3vh;
 }
 @media (max-width: 500px) {
@@ -265,7 +278,7 @@ footer {
 }
 .planning img {
   width: 60%;
-  padding: 0 2vh;
+  padding-right: 2vh;
 }
 @media (max-width: 500px) {
   .planning img {
@@ -274,7 +287,7 @@ footer {
   }
 }
 .contact {
-  margin: 0 30vh;
+  margin: 5vh 30vh 0;
 }
 @media (max-width: 500px) {
   .contact {
@@ -303,4 +316,31 @@ input[type="submit"] {
 }
 input[type="submit"]:hover {
   background-color: #f0d151;
+}
+.WWA {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.PL {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.UI {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.UI div {
+  display: flex;
+}
+.UI div div {
+  display: flex;
+  flex-direction: column;
+}
+.FE {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
