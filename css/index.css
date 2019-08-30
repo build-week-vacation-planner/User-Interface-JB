@@ -170,14 +170,6 @@ img {
 label {
   font-size: 2rem;
 }
-.homeIMG {
-  margin-top: 6vh;
-}
-@media (max-width: 500px) {
-  .homeIMG {
-    margin-top: 0;
-  }
-}
 nav {
   display: flex;
   position: fixed;
